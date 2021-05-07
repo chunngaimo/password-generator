@@ -74,7 +74,7 @@ console.log(length);
 for (var i = 0; i < length; i++) {
   randomPassword = randomPassword + passwordChar[Math.floor(Math.random() * passwordChar.length)];
 }
-console.log(randomPassword);
+document.getElementById('password').innerHTML = randomPassword;
 return randomPassword;
 }
 
@@ -93,4 +93,5 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
 
