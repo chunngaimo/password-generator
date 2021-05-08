@@ -47,8 +47,6 @@ function passwordCriteria() {
 
 }
 
-passwordCriteria();
-
 function generatePassword(includeSpecial,includeUpper,includeLower,includeNum,length) {
   var passwordChar = []
 
@@ -92,6 +90,7 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", passwordCriteria);
+
 
 
